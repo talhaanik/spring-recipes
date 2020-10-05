@@ -76,6 +76,12 @@ public class CalculatorLoggingAspect {
         log.info("Target class : " + target.getClass().getName());
         log.info("Arguments : " + a + ", " + b);
     }
-
+    
+  /*  @Before("CalculatorPointcuts.parameterPointcut(target, a, b)") 
+    public void logParameter(Object target, double a, double b) {
+    	log.info("Target class : {}", target.getClass().getName());
+    	log.info("Arguments : {}, {}"a,b);   
+    	}
+*/
 }
 
